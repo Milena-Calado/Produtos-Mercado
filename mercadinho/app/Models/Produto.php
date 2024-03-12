@@ -13,7 +13,7 @@ class Produto extends Model
         'descricao',
         'categoria',
         'preco',
-        'quantidade_estoque',
+        'quantidade',
     ];
 
     protected $casts = [

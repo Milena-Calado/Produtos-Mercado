@@ -36,11 +36,13 @@ Route::middleware('auth')->group(function () {
 Route::middleware('auth')->group(function () {
     Route::get('/produtos/{id}', [ProdutoController::class, 'show'])->name('produtos.show');
     Route::get('/produtos', [ProdutoController::class, 'index'])->name('produtos.index');
-    Route::get('/produtos/create', [ProdutoController::class, 'create'])->name('produtos.create');
+    Route::get('/create', [ProdutoController::class, 'create'])->name('produtos.create');
     Route::post('/produtos', [ProdutoController::class, 'store'])->name('produtos.store');
     Route::get('/produtos/{produto}/edit', [ProdutoController::class, 'edit'])->name('produtos.edit');
     Route::put('/produtos/{produto}', [ProdutoController::class, 'update'])->name('produtos.update');
     Route::delete('/produtos/{produto}', [ProdutoController::class, 'destroy'])->name('produtos.destroy');
+
+    
 });
 
 require __DIR__.'/auth.php';

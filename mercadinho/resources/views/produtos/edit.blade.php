@@ -20,8 +20,8 @@
             <input type="text" name="preco" id="preco" class="form-control" value="{{ isset($produto) ? $produto->preco : old('preco') }}">
         </div>
         <div class="form-group">
-            <label for="quantidade_estoque">Quantidade em Estoque</label>
-            <input type="text" name="quantidade_estoque" id="quantidade_estoque" class="form-control" value="{{ isset($produto) ? $produto->quantidade_estoque : old('quantidade_estoque') }}">
+            <label for="quantidade">Quantidade em Estoque</label>
+            <input type="text" name="quantidade" id="quantidade" class="form-control" value="{{ isset($produto) ? $produto->quantidade : old('quantidade') }}">
         </div>
         <button type="submit" class="btn btn-primary">Salvar</button>
     </form>

@@ -37,18 +37,16 @@ class ProdutoController extends Controller
             'descricao' => 'required',
             'categoria' => 'required',
             'preco' => 'required|numeric',
-            'quantidade_estoque' => 'required|integer',
+            'quantidade' => 'required|integer',
         ]);
 
         $produto = new Produto();        
         $produto->descricao = $request->input('descricao');
         $produto->categoria = $request->input('categoria');
         $produto->preco = $request->input('preco');
-        $produto->quantidade_estoque = $request->input('quantidade_estoque');
+        $produto->quantidade = $request->input('quantidade');
         
-        $produto->save();
-
-        Produto::create($request->all());
+        $produto->save();        
 
         return redirect()->route('produtos.index');
     }
@@ -64,7 +62,7 @@ class ProdutoController extends Controller
             'descricao' => 'required',
             'categoria' => 'required',
             'preco' => 'required|numeric',
-            'quantidade_estoque' => 'required|integer',
+            'quantidade' => 'required|integer',
         ]);
 
         $produto->update($request->all());

@@ -9,13 +9,13 @@
         @csrf
 
         <div>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" name="descricao" required></textarea>
         </div>
 
         <div>
-            <label for="descricao">Descrição:</label>
-            <textarea id="descricao" name="descricao" required></textarea>
+            <label for="categoria">Categoria:</label>
+            <textarea id="categoria" name="categoria" required></textarea>
         </div>
 
         <div>
@@ -23,7 +23,10 @@
             <input type="number" id="preco" name="preco" required>
         </div>
 
-        <!-- Outros campos do formulário -->
+        <div>
+            <label for="quantidade">Quantidade em estoque:</label>
+            <input type="number" id="quantidade" name="quantidade" required>
+        </div>    
 
         <button type="submit">Salvar</button>
     </form>
