@@ -45,7 +45,7 @@
         </div>
     </form>
 
-            <p class="mt-3">Ainda não tem uma conta? <a href="{{ route('register') }}">Registre-se aqui</a>.</p>
+            <p class="mt-3">Not have an account yet? <a href="{{ route('register') }}">Register here</a>.</p>
         </div>
     </div>
 </x-guest-layout>
