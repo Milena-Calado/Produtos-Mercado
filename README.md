@@ -1,3 +1,5 @@
+<h2><p align="center">  Projeto de Produtos do Mercadinho (PHP - Laravel)</p></h2>
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -7,63 +9,28 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Projeto de Produtos do Mercadinho
+## Descrição do Projeto
 
-Temos um Mercadinho no bairro onde queremos cadastrar todos os produtos disponíveis.
-Os produtos devem guardar o: id, descrição, categoria, preço e quantidade em estoque.
+O Mercadinho Local é um estabelecimento situado no coração do bairro, comprometido em fornecer uma variedade de produtos essenciais e de qualidade aos moradores da comunidade. Para melhorar a experiência de compra dos clientes e otimizar as operações internas, o Mercadinho está implementando um sistema de cadastro de produtos. O objetivo principal do projeto é criar um banco de dados abrangente que contenha informações detalhadas sobre todos os produtos disponíveis no Mercadinho. Isso permitirá uma gestão eficiente do estoque, facilitará a reposição de itens e proporcionará aos clientes uma visão clara das opções disponíveis.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Requisitos
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Você precisa de um servidor web configurado para hospedar o aplicativo Laravel. O processo de build não é necessário no sentido tradicional, como em linguagens compiladas, mas você ainda precisa garantir que todas as dependências do seu projeto Laravel estejam instaladas e que o aplicativo esteja configurado corretamente.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Passo a Passo
 
-## Learning Laravel
+1. **Configuração do ambiente**: Certifique-se de que o ambiente de desenvolvimento ou produção esteja configurado corretamente. Certifique-se de ter o PHP instalado no seu servidor, com uma versão compatível com o Laravel. Recomenda-se usar o PHP 7.4 ou superior.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+2. **Clone do repositorio**: (https://github.com/Milena-Calado/Produtos-Mercado.git).
+   
+3. **Instalação das dependências do projeto**: Verifique se todas as extensões necessárias para o Laravel estão instaladas e habilitadas. Isso pode incluir extensões como OpenSSL, PDO, Mbstring, Tokenizer, XML, Ctype e JSON. Você pode precisar habilitar essas extensões no arquivo de configuração do PHP. No diretório do seu projeto Laravel, execute `composer install` para instalar todas as dependências do Laravel especificadas no arquivo `composer.json`.
+   
+4. **Bando de dados**: Escolha e configure um banco de dados suportado pelo Laravel, como MySQL, PostgreSQL ou SQLite. Certifique-se de criar um banco de dados vazio e as credenciais de acesso necessárias para que o Laravel possa se conectar a ele. Certifique-se de que o arquivo `.env` esteja configurado corretamente para o ambiente em que seu aplicativo está sendo executado. Isso inclui configurações como conexão com banco de dados, chave de criptografia, etc.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+5. **Composer**: é uma ferramenta essencial para o gerenciamento de dependências do PHP. Certifique-se de ter o Composer instalado no seu servidor. Você pode usar o Composer para instalar as dependências do Laravel e gerenciar pacotes PHP adicionais.
+   
+6. **Permissões de arquivo e diretório**: Certifique-se de que as permissões de arquivo e diretório estejam configuradas corretamente para que o servidor web possa ler e gravar os arquivos conforme necessário. Isso é especialmente importante para armazenar logs, caches e arquivos carregados.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Uma vez configurado e em execução, você poderá acessar o projeto Laravel através do navegador digitando o URL correto. Se estiver configurado localmente acesse usando `http://localhost:8000/login` ou atraves do comando `php artisan serve` no terminal da sua IDE.
 
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+O framework Laravel é um software de código aberto licenciado sob a [licença MIT](https://opensource.org/licenses/MIT).
