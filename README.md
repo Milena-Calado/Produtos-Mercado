@@ -33,7 +33,7 @@
    
 6. **Permissões de arquivo e diretório**: Certifique-se de que as permissões de arquivo e diretório estejam configuradas corretamente para que o servidor web possa ler e gravar os arquivos conforme necessário. Isso é especialmente importante para armazenar logs, caches e arquivos carregados.
 
-Uma vez configurado e em execução, você poderá acessar o projeto Laravel através do navegador digitando o URL correto. Se estiver configurado localmente acesse usando `http://localhost:8000/login` ou atraves do comando `php artisan serve` no terminal da sua IDE.
+Uma vez configurado e em execução, você poderá acessar o projeto Laravel através do navegador digitando o URL correto. Se estiver configurado localmente acesse usando `http://localhost:8000/login` ou atraves do terminal por linha de comando usando `php artisan serve` no terminal da sua IDE.
 Registre um usuário e pode começar a navegar pela página. 
 
 O framework Laravel é um software de código aberto licenciado sob a [licença MIT](https://opensource.org/licenses/MIT).
